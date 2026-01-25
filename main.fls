@@ -1,6 +1,6 @@
-PWD C:\Users\Vinayak\Documents\OTPOCMRRTBHL
+PWD c:\Users\Vinayak\Documents\OTPOCMRRTBHL
 INPUT C:\Users\Vinayak\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT main.tex
+INPUT c:\Users\Vinayak\Documents\OTPOCMRRTBHL\main.tex
 OUTPUT main.log
 INPUT C:\Users\Vinayak\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Vinayak\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
