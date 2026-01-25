@@ -1,0 +1,15 @@
+﻿{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Auto Push LaTeX Repo",
+            "type": "shell",
+            "command": "C:\\Users\\Vinayak\\Documents\\OTPOCMRRTBHL\\auto_push.bat",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

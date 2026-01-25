@@ -1,0 +1,11 @@
+﻿{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*",
+                "isAsync": true,
+                "cmd": "C:\\Users\\Vinayak\\Documents\\OTPOCMRRTBHL\\auto_push.bat"
+            }
+        ]
+    }
+}
