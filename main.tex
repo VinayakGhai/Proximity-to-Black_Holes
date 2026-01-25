@@ -1,0 +1,219 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage[a4paper,
+  top=1in,
+  bottom=1in,
+  left=1.25in,
+  right=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{titlesec}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{\fill} % vertical centering
+
+    % Title (split manually for readability)
+    {\Huge \textbf{On the Proximity of Cosmic}}\\[0.2cm]
+    {\Huge \textbf{Mass\textendash{}Radius Ratios to}}\\[0.4cm]
+    {\Huge \textbf{ Black Hole Limits}}\\[0.5cm] % Use -- for en-dash, --- for em-dash
+
+    % Author
+    {\LARGE Vinayak Ghai}\\[0.5cm]
+
+    % Subtitle / placeholder
+    {\Large Independent Research Project}\\[1cm]
+
+    % Date
+    {\Large \today}
+    \vspace*{\fill}
+\end{titlepage}
+
+
+\newpage
+
+% Abstract
+
+\begin{abstract}
+
+This study examines how the sizes and masses of cosmic objects—such as stars and planets—relate to the extreme limits that could cause them to collapse into black holes. Black holes are characterized by a critical boundary known as the Schwarzschild radius, beyond which \textbf{gravity} becomes so strong that nothing, not even light, can escape. A natural question arises as to whether these black-hole limits can provide insight into ordinary cosmic objects that exist far from such extreme conditions.
+
+To investigate this, we first apply simplified Newtonian physics, typically introduced at the high-school level. While this approach is mathematically straightforward, it can yield misleading results because it does not fully incorporate the effects predicted by Einstein’s theory of relativity. Relativistic effects become significant when \textbf{gravity} is exceptionally strong or when matter reaches extreme densities.
+
+We then adopt a more rigorous, calculus-based framework that accounts for gravitational effects with greater accuracy. This method produces results that align more closely with relativistic expectations for massive stars and black-hole formation.
+
+Overall, this work highlights the interplay between classical physics and relativity in determining the physical limits of cosmic objects. It clarifies the distinction between ordinary stellar structures and the extreme conditions required for black-hole collapse, offering a clearer perspective on how \textbf{gravity} governs structure and stability across the universe.
+
+\end{abstract}
+
+\newpage
+
+% Sections
+\section{Introduction}
+
+\subsection{Background and Motivation}
+
+The Schwarzschild radius emerges naturally in general relativity as a critical scale associated with gravitational collapse. It defines the radius at which the escape velocity from a spherically symmetric mass equals the speed of light, marking the formation of an event horizon. This simple mass-radius relationship is often presented as a clear boundary between ordinary astrophysical objects and black holes.
+\begin{equation}
+r_s = \frac{2GM}{c^2}
+\end{equation}
+where $G$ is the gravitational constant, $M$ is the mass of the object, and $c$ is the speed of light. This simple mass-radius relationship is often presented as a clear boundary between ordinary astrophysical objects and black holes.
+
+The apparent simplicity of this criterion makes it tempting to apply it broadly. In particular, expressing the Schwarzschild condition as an inequality involving mass and radius suggests that one might compare ordinary cosmic objects—such as stars or planets—against black hole limits in a direct and quantitative way. Initially, this motivates the idea that meaningful physical insight could be obtained by examining how close such objects come to satisfying this condition.
+
+However, this intuition raises an important question: does mathematical proximity to the Schwarzschild limit necessarily imply physical relevance, or does such reasoning obscure deeper constraints imposed by gravitational theory?
+
+\subsection{Limitations of Naive Schwarzschild Arguments}
+
+The Schwarzschild radius is derived under assumptions such as spherical symmetry, vacuum exterior, and full general relativity. Ignoring these assumptions can produce arguments that are mathematically correct but physically misleading.
+
+In Newtonian terms, the escape velocity from an object is
+\begin{equation}
+v_\text{esc} = \sqrt{\frac{2GM}{R}},
+\end{equation}
+and setting $v_\text{esc} = c$ formally gives
+\begin{equation}
+R = \frac{2GM}{c^2} = r_s,
+\end{equation}
+explaining the intuitive, classical motivation. However, this neglects relativistic effects, internal pressure, and spacetime curvature, making collapse physically impossible for ordinary objects. 
+
+This tension between mathematical validity and physical meaning motivates the present study, which examines the limits of applying Schwarzschild-based criteria.
+
+
+The Schwarzschild radius is derived under specific assumptions, including spherical symmetry, vacuum spacetime outside the mass distribution, and a fully relativistic treatment of gravity. When these assumptions are ignored, the resulting arguments—though mathematically consistent—can become physically misleading.
+
+In Newtonian terms, the escape velocity from the surface of an object is given by
+\begin{equation}
+v_\text{esc} = \sqrt{\frac{2GM}{R}},
+\end{equation}
+where $M$ is the mass of the object and $R$ is its radius. By formally setting $v_\text{esc} = c$, one recovers the Schwarzschild radius
+\begin{equation}
+R = \frac{2GM}{c^2} = r_s,
+\end{equation}
+which explains why this formula is often intuitively motivated using classical mechanics. However, this reasoning neglects relativistic effects, internal pressure, and spacetime curvature, all of which are crucial for determining whether gravitational collapse is physically possible.
+
+Simple Newtonian approximations therefore suggest that ordinary objects could approach black hole-like behavior in certain regimes, even though collapse is impossible under the proper relativistic framework. This mismatch between mathematical validity and physical interpretability forms the central tension motivating the present study. Rather than treating this discrepancy as a failure, it provides an opportunity to examine the limits of applicability of widely used gravitational criteria.
+
+
+The Schwarzschild radius is derived under specific assumptions, including spherical symmetry, vacuum spacetime outside the mass distribution, and a fully relativistic treatment of gravity. When these assumptions are ignored, the resulting arguments—though mathematically consistent—can become physically misleading.
+
+Simple Newtonian reasoning allows the Schwarzschild condition to be rewritten in terms of escape velocity or mass\textendash{}radius ratios, but such formulations neglect relativistic energy conditions, internal pressure, and spacetime curvature. As a result, they may suggest that ordinary objects approach black hole-like behavior in regimes where gravitational collapse is physically impossible.
+
+This mismatch between mathematical validity and physical interpretability forms the central tension motivating the present study. Rather than treating this discrepancy as a failure, it provides an opportunity to examine the limits of applicability of widely used gravitational criteria.
+
+
+\subsection{Scope and Contributions of This Work}
+
+This work investigates the conditions under which Schwarzschild-based mass-radius comparisons retain physical meaning and identifies regimes where such comparisons break down. While the Schwarzschild radius provides a precise boundary for black hole formation, its application to ordinary stars and planets can be misleading when naive Newtonian intuition is applied.
+
+For example, consider a neutron star with mass $M \sim 2 M_\odot$ and radius $R \sim 12~\mathrm{km}$. Using the Newtonian escape velocity formula,
+\[
+v_\text{esc} = \sqrt{\frac{2GM}{R}} \approx 0.6\,c,
+\]
+one might conclude that this object is dangerously close to becoming a black hole. However, fully relativistic models show that the internal pressure and equation of state prevent collapse, illustrating the gap between mathematical suggestion and physical reality.
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{mass_radius_diagram.png}
+\caption{Schematic illustration of the mass\textendash{}radius parameter space. The Schwarzschild radius boundary (red line) marks the theoretical limit for black hole formation. Ordinary stars (blue region) lie safely below this limit, highlighting the gap between Newtonian intuition and relativistic reality.}\label{fig:mass-radius}
+\end{figure}
+
+By contrasting Newtonian approximations with calculus-based and relativistically informed analyses, this study systematically explores the mass\textendash{}radius parameter space of non-collapsed cosmic objects. Computational methods, including numerical evaluation of compactness and visualization of parameter regimes, are employed to distinguish physically meaningful results from misleading interpretations.
+
+Philosophically, this study emphasizes the distinction between formal mathematical derivations and their physical interpretation. A formula may be internally consistent, yet its naive application can mislead if the underlying assumptions are ignored. Recognizing this tension is crucial for both theoretical understanding and responsible scientific communication.
+
+
+
+In doing so, this work clarifies the boundaries within which black hole criteria can be responsibly applied, providing both quantitative insights and conceptual understanding. It does not propose a new model of gravitational collapse, but rather demonstrates how careful analysis can prevent misinterpretation of widely used gravitational formulas.
+
+
+This work investigates the conditions under which Schwarzschild-based mass-radius comparisons retain physical meaning, and identifies regimes where such comparisons break down. By contrasting Newtonian approximations with calculus-based and relativistically informed analyses, we demonstrate how physically inconsistent conclusions can arise despite mathematically correct formulations.
+
+Computational methods are employed to explore the mass\textendash{}radius parameter space of non-collapsed cosmic objects, allowing a systematic distinction between physically meaningful and misleading regimes. The goal of this study is not to propose a new model of gravitational collapse, but to clarify the boundaries within which black hole criteria can be responsibly applied.
+
+In doing so, this work emphasizes the importance of separating formal mathematical results from their physical interpretation in gravitational physics.
+
+\section{A Naive but Misleading Schwarzschild Reformulation}
+This section examines a seemingly straightforward reformulation of the Schwarzschild condition.
+We will present an algebraic rearrangement and introduce a formal kinematic interpretation.
+The goal is to highlight subtle conceptual issues that arise from this naive approach.
+
+
+\subsection{Algebraic Reformulation}
+
+The Schwarzschild radius is defined by the condition
+\begin{equation}
+\frac{2GM}{R} = c^2,
+\end{equation}
+which may be rearranged as
+\begin{equation}
+2GM = c^2 R.
+\end{equation}
+
+Introducing a formal kinematic interpretation, we write one factor of the speed of light as a ratio of differentials,
+\begin{equation}
+c = \frac{dx}{dt},
+\end{equation}
+while retaining the second factor explicitly. Substituting into the previous expression yields
+\begin{equation}
+2GM = c R \frac{dx}{dt}.
+\end{equation}
+
+Multiplying both sides by $dt$, we obtain
+\begin{equation}
+2GM\, dt = c R\, dx.
+\label{eq:naive-differential}
+\end{equation}
+
+\subsection{Hypothetical Photon-Transit Interpretation and Black Hole Hypothesis}
+
+Equation~\eqref{eq:naive-differential} can be interpreted under a formal but physically naive hypothesis. 
+Let $x$ denote the total coordinate distance traversed by a photon along a straight radial path. 
+Points $A$ and $B$ denote the start and end of the path, respectively, while $O$ marks the entry point of a black hole. 
+Inside the event horizon ($x \ge O$), the physics is unknown and potentially dominated by extreme tidal forces and spaghettification, which stretch objects along the radial direction.
+
+For simplicity, we assume a symmetric division of the trajectory such that
+\[
+OA = OB = \frac{x}{2}.
+\]
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{photon_bh_trajectory.png}
+\caption{Hypothetical photon trajectory near a black hole. The cyan line represents the photon path. The purple shaded region marks the black hole interior where physics is unknown, potentially dominated by spaghettification. O is the entry point of the black hole.}\label{fig:photon-bh}
+\end{figure}
+
+This construction provides a visually intuitive, though physically speculative, framework to explore the consequences of formally manipulating the Schwarzschild condition.
+
+\subsection{Formal Integration and Resulting Timescale}
+
+Integrating both sides of Equation~\eqref{eq:naive-differential}, we write
+\begin{equation}
+\int_{0}^{T} 2GM \, dt = \int_{x/2}^{x} c R \, dx.
+\end{equation}
+The choice of integration limits reflects the assumptions made in this naive construction. 
+On the left-hand side, we integrate over $t$ from $0$ to $T$, corresponding to the photon being emitted at point $A$ and reaching point $B$ along the trajectory. 
+On the right-hand side, we integrate over $x$ from $x/2$ to $x$, reflecting the symmetric division of the path around the entry point $O$ of the black hole. 
+This implicitly assumes that the photon travels along a straight radial line at constant speed $c$, both outside and (naively) inside the event horizon. 
+While this choice is mathematically convenient, it does not correspond to any physically valid trajectory in general relativity, where spacetime curvature and tidal effects dominate.
+
+Evaluating the integrals gives
+\begin{equation}
+2GM\, T = c R \left( x - \frac{x}{2} \right) = \frac{c R x}{2},
+\end{equation}
+which can be rearranged to
+\begin{equation}
+4GM\, T = c R x.
+\end{equation}
+
+While this derivation is mathematically consistent, it is physically naive: it ignores relativistic effects, the curvature of spacetime, and the impossibility of classical photon trajectories inside the event horizon. Therefore, despite its formal correctness, the result does not describe real black hole physics.
+
+
+
+\end{document}
