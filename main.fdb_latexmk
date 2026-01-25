@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1769338877.72083 "c:/Users/Vinayak/Documents/OTPOCMRRTBHL/main.tex" "main.pdf" "main" 1769338881.90324 0
+["pdflatex"] 1769339070.06288 "c:/Users/Vinayak/Documents/OTPOCMRRTBHL/main.tex" "main.pdf" "main" 1769339071.93747 0
   "C:/Users/Vinayak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1768322061 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Vinayak/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1767773695 13334454 4a22e5b0766a764b187961f098b4772c ""
   "C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -84,12 +84,12 @@
   "C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1736608268 48766 87a17a4ef312a39cd43896e34a679a56 ""
   "C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/Vinayak/Documents/OTPOCMRRTBHL/main.tex" 1769338877 10235 2c1f923e74333d50eef0b65f9879f577 ""
+  "c:/Users/Vinayak/Documents/OTPOCMRRTBHL/main.tex" 1769339069 10234 8e978ee04d97383324c8e19e23601439 ""
   "figures/mass_radius_diagram.png" 1768323290 232651 25752fcdc7922392c0835ecb6cffc26b ""
   "figures/photon_bh_trajectory.png" 1768405486 50791 244f4557c2988b09a92145b57b8df892 ""
-  "main.aux" 1769338881 3376 321b2ee8543836c8b0d4a5e82b8c287c "pdflatex"
-  "main.out" 1769338881 2009 940bb386d8650387d0b0bd1048fb0d3f "pdflatex"
-  "main.tex" 1769338877 10235 2c1f923e74333d50eef0b65f9879f577 ""
+  "main.aux" 1769339071 3376 321b2ee8543836c8b0d4a5e82b8c287c "pdflatex"
+  "main.out" 1769339071 2009 940bb386d8650387d0b0bd1048fb0d3f "pdflatex"
+  "main.tex" 1769339069 10234 8e978ee04d97383324c8e19e23601439 ""
   (generated)
   "main.aux"
   "main.log"
