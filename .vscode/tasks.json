@@ -1,15 +1,59 @@
-﻿{
+{
     "version": "2.0.0",
     "tasks": [
+        {
+            "label": "Build LaTeX (Clean + Compile)",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}/build.ps1"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Quick Build (No Clean)",
+            "type": "shell",
+            "command": "latexmk",
+            "args": [
+                "-pdf",
+                "main.tex"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Clean Build Files",
+            "type": "shell",
+            "command": "latexmk",
+            "args": [
+                "-C"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build"
+        },
         {
             "label": "Auto Push LaTeX Repo",
             "type": "shell",
             "command": "C:\\Users\\Vinayak\\Documents\\OTPOCMRRTBHL\\auto_push.bat",
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         }
     ]
 }

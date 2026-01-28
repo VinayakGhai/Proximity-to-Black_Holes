@@ -1,0 +1,17 @@
+[
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Build LaTeX (Clean + Compile)"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Quick Build (No Clean)"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Clean Build Files"
+    }
+]
