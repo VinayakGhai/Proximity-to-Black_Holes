@@ -168,5 +168,62 @@ which can be rearranged to
 \end{equation}
 
 While this derivation is mathematically consistent, it is physically naive: it ignores relativistic effects, the curvature of spacetime, and the impossibility of classical photon trajectories inside the event horizon. Therefore, despite its formal correctness, the result does not describe real black hole physics.
+\subsection{Comparison with the Relativistic Characteristic Timescale}
+
+While the preceding derivation is intentionally naive and does not represent
+physically valid black hole dynamics, it nevertheless motivates a comparison
+with timescales that are routinely employed in relativistic astrophysics.
+In professional treatments of black holes, it is common to identify
+\emph{characteristic scales} that set the natural units of length and time
+for strong gravitational fields.
+
+The most fundamental of these is the gravitational (or Schwarzschild) radius,
+\[
+r_g = \frac{2GM}{c^2},
+\]
+which emerges directly from the Schwarzschild solution of Einstein's field
+equations. Rather than interpreting this quantity through escape velocity
+arguments, modern treatments regard it as a geometric scale associated with
+the causal structure of spacetime near a compact object~\cite{bambi2017, carlip2004}.
+
+From this length scale, a corresponding characteristic timescale is obtained
+by dividing by the speed of light,
+\[
+\tau = \frac{r_g}{c} = \frac{2GM}{c^3}.
+\]
+This timescale represents the order of magnitude of the time required for
+light to traverse a region of spacetime comparable in size to the gravitational
+radius. It therefore sets the fastest meaningful dynamical timescale for
+processes occurring in the vicinity of a black hole, including horizon-scale
+phenomena and strong-field relativistic effects~\cite{thorne1986, bambi2017}.
+
+To illustrate its magnitude, consider a stellar-mass black hole with mass
+$M = 10 M_\odot$. Substituting numerical values yields
+\[
+\tau \approx 5 \times 10^{-5}\,\text{s},
+\]
+or approximately $50\,\mu\text{s}$. For a supermassive black hole with
+$M \sim 10^9 M_\odot$, the same expression gives a characteristic timescale of
+order one hour. The linear dependence of $\tau$ on mass highlights the dramatic
+separation of timescales between stellar-mass and supermassive black holes.
+
+The timescale $T$ obtained in Section~2.3, despite being derived from a
+Newtonian-inspired and physically inconsistent construction, is dimensionally
+comparable to this relativistic characteristic timescale. This comparison is
+instructive: it demonstrates that even naive manipulations of the Schwarzschild
+condition can reproduce the correct \emph{order of magnitude} for black-hole
+timescales, while still failing to capture the underlying spacetime geometry
+responsible for such behavior.
+
+This agreement in scale should not be interpreted as validation of the
+derivation presented in Section~2.3. Rather, it reflects the fact that the
+Schwarzschild radius encodes a fundamental relativistic scale that can appear
+in multiple mathematical contexts. The comparison therefore reinforces the
+central theme of this work: mathematical consistency alone does not guarantee
+physical meaning, and only a fully relativistic framework correctly describes
+photon behavior and causal structure near an event horizon.
+
+\bibliographystyle{plain}
+\bibliography{references}
 
 \end{document}
