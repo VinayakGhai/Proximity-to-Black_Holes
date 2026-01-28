@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  25 JAN 2026 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  28 JAN 2026 21:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Vinayak/Documents/OTPOCMRRTBHL/main.tex
-(c:/Users/Vinayak/Documents/OTPOCMRRTBHL/main.tex
+**c:/Users/Vinayak/Documents/Projects/OTPOCMRRTBHL/main.tex
+(c:/Users/Vinayak/Documents/Projects/OTPOCMRRTBHL/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (C:\Users\Vinayak\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -337,52 +337,52 @@ Package hyperref Info: Link coloring OFF on input line 16.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 \newpage
+l.55 \newpage
               [1]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
  (C:\Users\Vinayak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
  (C:\Users\Vinayak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2]
-<figures/mass_radius_diagram.png, id=59, 578.16pt x 433.62pt>
+<figures/mass_radius_diagram.png, id=107, 578.16pt x 433.62pt>
 File: figures/mass_radius_diagram.png Graphic file (type png)
 <use figures/mass_radius_diagram.png>
-Package pdftex.def Info: figures/mass_radius_diagram.png  used on input line 99.
+Package pdftex.def Info: figures/mass_radius_diagram.png  used on input line 100.
 (pdftex.def)             Requested size: 304.42894pt x 228.32217pt.
-
-Underfull \hbox (badness 1314) in paragraph at lines 100--100
-[]\OT1/cmr/m/n/12 Figure 1: []Schematic il-lus-tra-tion of the mass{radius pa-ram-e-ter space. The
- []
-
-[3 <./figures/mass_radius_diagram.png>]
-<figures/photon_bh_trajectory.png, id=70, 714.7503pt x 354.123pt>
+ [3 <./figures/mass_radius_diagram.png>]
+<figures/photon_bh_trajectory.png, id=119, 714.7503pt x 354.123pt>
 File: figures/photon_bh_trajectory.png Graphic file (type png)
 <use figures/photon_bh_trajectory.png>
-Package pdftex.def Info: figures/photon_bh_trajectory.png  used on input line 145.
+Package pdftex.def Info: figures/photon_bh_trajectory.png  used on input line 146.
 (pdftex.def)             Requested size: 347.92163pt x 172.38164pt.
- [4] [5 <./figures/photon_bh_trajectory.png>] (main.aux)
+ [4 <./figures/photon_bh_trajectory.png>] [5] [6] [7]
+Overfull \hbox (1.93396pt too wide) in paragraph at lines 317--318
+\OT1/cmr/m/n/12 high-school level al-ge-bra|factoring, can-cel-la-tion, and sub-sti-tu-tion|yet achieves
+ []
+
+[8] [9] (main.bbl [10]) [11] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 940BB386D8650387D0B0BD1048FB0D3F;2009.
+(rerunfilecheck)             Checksum: 8DC7C914303B37AEA6FFBE3BFD572AF2;5445.
  ) 
 Here is how much of TeX's memory you used:
- 10537 strings out of 467871
- 161258 string characters out of 5417409
- 581871 words of memory out of 5000000
- 39271 multiletter control sequences out of 15000+600000
- 635090 words of font info for 67 fonts, out of 8000000 for 9000
+ 10628 strings out of 467871
+ 162751 string characters out of 5417409
+ 584997 words of memory out of 5000000
+ 39317 multiletter control sequences out of 15000+600000
+ 638382 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,617b,489s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (6 pages, 408214 bytes).
+ 75i,12n,79p,891b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Vinayak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (12 pages, 470786 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

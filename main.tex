@@ -17,6 +17,7 @@
 
 % Title Page
 \begin{titlepage}
+    \thispagestyle{empty}
     \centering
     \vspace*{\fill} % vertical centering
 
@@ -97,7 +98,7 @@ one might conclude that this object is dangerously close to becoming a black hol
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/mass_radius_diagram.png}
-    \caption{Schematic illustration of the mass\textendash{}radius parameter space. The Schwarzschild radius boundary (red line) marks the theoretical limit for black hole formation. Ordinary stars (blue region) lie safely below this limit, highlighting the gap between Newtonian intuition and relativistic reality. Some supporting computations for this figure were generated using Python scripts, with plotting handled via Matplotlib and Plotly.}\label{fig:mass-radius}
+    \caption{Mass--radius parameter space showing the Schwarzschild radius boundary (red line) marking the theoretical limit for black hole formation. Ordinary stars (blue region) lie safely below this limit, highlighting the gap between Newtonian intuition and relativistic reality.}\label{fig:mass-radius}
 \end{figure}
 
 By contrasting Newtonian approximations with calculus-based and relativistically informed analyses, this study systematically explores the mass\textendash{}radius parameter space of non-collapsed cosmic objects. Computational methods, including numerical evaluation of compactness and visualization of parameter regimes, are employed to distinguish physically meaningful results from misleading interpretations.
@@ -168,7 +169,7 @@ which can be rearranged to
 \end{equation}
 
 While this derivation is mathematically consistent, it is physically naive: it ignores relativistic effects, the curvature of spacetime, and the impossibility of classical photon trajectories inside the event horizon. Therefore, despite its formal correctness, the result does not describe real black hole physics.
-\subsection{Comparison with the Relativistic Characteristic Timescale}
+\subsection{Relativistic Characteristic Timescale}
 
 While the preceding derivation is intentionally naive and does not represent
 physically valid black hole dynamics, it nevertheless motivates a comparison
@@ -207,21 +208,166 @@ $M \sim 10^9 M_\odot$, the same expression gives a characteristic timescale of
 order one hour. The linear dependence of $\tau$ on mass highlights the dramatic
 separation of timescales between stellar-mass and supermassive black holes.
 
-The timescale $T$ obtained in Section~2.3, despite being derived from a
-Newtonian-inspired and physically inconsistent construction, is dimensionally
-comparable to this relativistic characteristic timescale. This comparison is
-instructive: it demonstrates that even naive manipulations of the Schwarzschild
-condition can reproduce the correct \emph{order of magnitude} for black-hole
-timescales, while still failing to capture the underlying spacetime geometry
-responsible for such behavior.
+To emphasize this mass dependence, consider also an intermediate-mass black hole with $M \sim 10^4 M_\odot$:
+\[
+\tau \approx 5 \times 10^{-1}\,\text{s} = 0.5\,\text{s},
+\]
+showing how the timescale increases linearly with mass. Even a neutron-star-mass object ($M \sim 2 M_\odot$) would give $\tau \approx 10\,\mu\text{s}$, though it would not actually form a black hole.
 
-This agreement in scale should not be interpreted as validation of the
-derivation presented in Section~2.3. Rather, it reflects the fact that the
-Schwarzschild radius encodes a fundamental relativistic scale that can appear
-in multiple mathematical contexts. The comparison therefore reinforces the
-central theme of this work: mathematical consistency alone does not guarantee
-physical meaning, and only a fully relativistic framework correctly describes
-photon behavior and causal structure near an event horizon.
+The timescale $T$ obtained from our naive integration in Section~2.3, despite being derived from a Newtonian-inspired and physically inconsistent framework, is dimensionally comparable to this relativistic characteristic timescale $\tau$. This comparison is instructive: it demonstrates that even simple manipulations of the Schwarzschild condition can accidentally reproduce the correct \emph{order of magnitude} for characteristic timescales in black hole physics.
+
+For the remainder of this analysis, we formally denote the timescale $T$ as $\Lambda$ (capital Lambda), the Integrated Traversal Time, which we shall now study in detail. This rebranding allows us to distinguish the heuristic construction from the rigorous relativistic results, while tracking how these two quantities compare across different mass and distance scales.
+
+\section{Integrated Traversal Time}
+
+The Integrated Traversal Time $\Lambda$ constitutes a fundamental quantity arising from the naive kinematic integration presented in Section~2.3. While this framework is heuristic in nature—neglecting gravitational redshift, coordinate singularities, and genuine horizon dynamics—it provides a structured and interpretable measure of path-dependent traversal durations within the simplified model. By dedicating a separate section to its development, we establish both its mathematical foundations and its relationship to the relativistic characteristic timescale $\tau$.
+
+The development of $\Lambda$ distinguishes the heuristic, kinematic timescale constructed from flat-space Newtonian assumptions from the relativistic, geometrically meaningful timescale $\tau$ that emerges from general relativity. Despite their different conceptual origins, both timescales share the same dimensional structure and mass dependence. This symbolic distinction allows us to track how these two quantities compare across different regimes without conflating their physical interpretations.
+
+\subsection{Formulation of the Integrated Traversal Time}
+
+Starting from the integration of Section~2.3, we have
+\begin{equation}
+    4GM \, T = c \, R \, x,
+\end{equation}
+where $x$ denotes the radial coordinate interval traversed, and $R$ is the characteristic radius introduced in the model. Substituting the Schwarzschild radius $R = 2GM/c^2$ yields
+\begin{equation}
+    4GM \, T = c \left(\frac{2GM}{c^2}\right) x = \frac{2GM}{c} x.
+\end{equation}
+
+Dividing both sides by $4GM$ isolates the traversal timescale:
+\begin{equation}
+    T = \frac{x}{2c}.
+\end{equation}
+
+We now formally redefine this quantity as
+\begin{equation}
+    \Lambda \equiv T = \frac{x}{2c},
+\end{equation}
+the Integrated Traversal Time. The key observations underlying this expression are:
+
+\begin{itemize}
+    \item \textbf{Geometric origin:} The factor $x/2$ arises naturally from the symmetric geometric integration over the chosen radial interval in Section~2.3.
+    \item \textbf{Kinematic approximation:} The speed of light $c$ is treated as constant, consistent with the flat-space kinematic framework employed throughout the heuristic construction.
+    \item \textbf{Mass independence:} The mass parameter $M$ cancels entirely during the algebraic simplification, indicating that $\Lambda$ is a purely kinematic quantity that depends neither on gravitational dynamics nor on the properties of the source. This stands in sharp contrast to $\tau = 2GM/c^3$, which scales linearly with mass.
+\end{itemize}
+
+\subsection{Horizon-Scale Comparison: The Convergence of \texorpdfstring{$\Lambda$ and $\tau$}{Lambda and tau}}
+
+The goal of this section is to demonstrate a numerical convergence between a heuristic kinematic model and General Relativity through high-school level algebra and dimensional analysis.
+
+\subsubsection{Define \texorpdfstring{$\tau$}{tau}: The Relativistic Characteristic Timescale}
+
+In General Relativity, black holes are characterized by a critical length scale known as the Schwarzschild radius:
+\begin{equation}
+    r_g = \frac{2GM}{c^2}
+\end{equation}
+where $G$ is the gravitational constant, $M$ is the mass, and $c$ is the speed of light. From this geometric scale, we derive a fundamental timescale representing the time required for light to traverse the Schwarzschild radius:
+\begin{equation}
+    \tau = \frac{r_g}{c}
+\end{equation}
+
+Substituting the expression for $r_g$, we obtain:
+\begin{equation}
+    \tau = \frac{2GM}{c^3}
+\end{equation}
+
+This quantity $\tau$ serves as the characteristic timescale of the black hole, setting the physical scale for the fastest possible processes near the event horizon.
+
+\subsubsection{Define \texorpdfstring{$\Lambda$}{Lambda}: The Integrated Traversal Time}
+
+From our earlier development in Section~3.1, we derived the Integrated Traversal Time as the time required for light to traverse a specified distance $x$ at constant speed $c$:
+\begin{equation}
+    \Lambda = \frac{x}{2c}
+\end{equation}
+
+This expression arises purely from kinematic considerations in the heuristic model and contains no gravitational mass dependence.
+
+\subsubsection{Substitution \& Proof: Showing Convergence at the Horizon Scale}
+
+To compare $\Lambda$ and $\tau$ directly, we now set the traversal distance $x$ equal to the diameter of the black hole event horizon:
+\begin{center}
+    $x = 2r_g$
+\end{center}
+
+Substituting this into the expression for $\Lambda$:
+\begin{equation}
+    \Lambda = \frac{2r_g}{2c}
+\end{equation}
+
+The factors of 2 in the numerator and denominator cancel, leaving:
+\begin{equation}
+    \Lambda = \frac{r_g}{c}
+\end{equation}
+
+But we defined $\tau = \frac{r_g}{c}$ above. Therefore, by simple algebraic cancellation, we have proven:
+\begin{equation}
+    \Lambda = \tau \quad \text{at the horizon scale}
+\end{equation}
+
+\subsubsection{Pedagogical Goal: Understanding Dimensional Analysis}
+
+This proof illustrates a powerful principle: even when working with simplified, non-relativistic models, dimensional analysis and geometric reasoning can lead to correct characteristic scales. The convergence of $\Lambda$ and $\tau$ demonstrates that:
+
+\begin{enumerate}
+    \item \textbf{Dimensional consistency matters.} Both timescales have the dimension of time and involve the fundamental constant $c$. When dimensions are correct, the model captures the right order of magnitude.
+    
+    \item \textbf{Geometry provides natural scales.} The Schwarzschild radius $r_g$ emerges both in General Relativity and as a natural length scale in the heuristic model. This geometric role transcends the physical differences between the two approaches.
+    
+    \item \textbf{Algebra can be more transparent than calculus.} This proof uses only high-school level algebra—factoring, cancellation, and substitution—yet achieves a profound result: it shows that a heuristic model can predict the correct timescale at the horizon. Advanced calculus notation (like evaluation bars or integral limits) is unnecessary; simple substitution suffices.
+    
+    \item \textbf{Numerical agreement does not imply physical equivalence.} While $\Lambda = \tau$ at $x = 2r_g$, the two quantities have fundamentally different origins. $\tau$ emerges from General Relativity's description of curved spacetime; $\Lambda$ arises from flat-space kinematics. Their agreement at the horizon scale is a consequence of dimensional structure, not physical identity.
+\end{enumerate}
+
+This framework highlights how dimensional analysis serves as a bridge between simple models and sophisticated theories, enabling even elementary constructs to capture essential features of complex phenomena.
+\subsection{Scaling Across Mass Regimes}
+
+To illustrate the behavior of $\Lambda$ and $\tau$ across the full spectrum of black hole masses, Table~\ref{table:timescales} compares the two timescales at horizon-scale distances ($x = 2r_g$).
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Black Hole Type} & \textbf{Mass ($M$)} & \textbf{Relativistic $\tau$} & \textbf{Integrated $\Lambda$ ($x = 2r_g$)} \\
+\hline
+Stellar-mass & $10\,M_\odot$ & $\sim 50\,\mu\text{s}$ & $\sim 50\,\mu\text{s}$ \\
+Intermediate-mass & $10^4\,M_\odot$ & $\sim 0.05\,\text{s}$ & $\sim 0.05\,\text{s}$ \\
+Supermassive & $10^9\,M_\odot$ & $\sim 1.5\,\text{hours}$ & $\sim 1.5\,\text{hours}$ \\
+\hline
+\end{tabular}
+\caption{Comparison of the relativistic characteristic timescale $\tau$ and the integrated traversal time $\Lambda$ evaluated at horizon-scale distances ($x = 2r_g$).}
+\label{table:timescales}
+\end{table}
+
+The table reveals a crucial distinction: when $x$ is fixed at horizon-scale (mass-dependent), both timescales display identical linear scaling with mass, mediated through $r_g$. However, for arbitrary traversal distances $x$ independent of the source mass, $\Lambda = x/(2c)$ exhibits no mass dependence whatsoever. This contrast reflects the kinematic essence of $\Lambda$ and underscores its origin in geometric constructs rather than genuine gravitational dynamics.
+
+\subsection{Refined Interpretation}
+
+The Integrated Traversal Time $\Lambda$ represents a dimensionally consistent and structurally coherent timescale arising from geometric considerations and kinematic assumptions within the simplified framework of Section~2.3. Its numerical agreement with the relativistic timescale $\tau$ at horizon-scale distances is noteworthy and instructive, yet it does not signify that $\Lambda$ captures genuine relativistic horizon-scale dynamics. Rather, $\Lambda$ serves as a clean, interpretable reference measure for path-dependent traversal durations, enabling direct comparison between heuristic kinematic models and fully relativistic formulations grounded in general relativity.
+
+\subsubsection{Understanding the Distinction through Analogies}
+
+To clarify why $\Lambda$ and $\tau$ can numerically agree while remaining conceptually distinct, consider the following everyday analogies:
+
+\begin{enumerate}
+    \item \textbf{The Ruler and the Road.} 
+    Imagine measuring the distance a car travels on a straight road using a ruler. If the ruler is 30 cm long and the road is 30 km long, we can determine the travel time by dividing distance by speed: $t = 30\,\text{km} / 100\,\text{km/h} = 0.3\,\text{hours}$. This calculation is mathematically valid and gives the correct answer. However, the \emph{ruler itself} tells us nothing about how the car's engine works, the friction in the tires, or the road's condition. Similarly, $\Lambda = x/(2c)$ is a valid \emph{kinematic} measure of traversal duration that correctly relates distance to speed, but it carries no information about gravitational dynamics or spacetime curvature—phenomena captured by the truly relativistic quantity $\tau$.
+
+    \item \textbf{The Menu and the Meal.} 
+    A restaurant menu lists the names and prices of dishes in a way that is dimensionally consistent: each item has a price in dollars. One might calculate ``menu value per item'' and discover that, on average, each entry costs the same. This calculation is structurally sound, yet it tells us nothing about nutritional content, flavor, or cooking technique—the \emph{physics} of the meal itself. Likewise, $\Lambda$ and $\tau$ both have the dimension of time and may accidentally produce the same numerical value at certain scales (like $x = 2r_g$), but this dimensional agreement does not mean they encode the same physical insight. $\tau$ reveals something deep about the causal structure of spacetime near a black hole; $\Lambda$ reveals only how long light takes to traverse a given distance in flat space.
+
+    \item \textbf{The Shadow and the Object.} 
+    On a sunny afternoon, a building casts a shadow on the ground. The shadow's length depends on the sun's angle and the building's height, and we can calculate it using simple geometry. The shadow may even have the same length as a nearby tree. Yet the shadow is not the building, nor does it reveal the building's internal structure, materials, or architectural purpose. Similarly, $\Lambda$ is a ``shadow'' or heuristic projection of the Schwarzschild scale onto the kinematic framework. It can numerically match $\tau$ (just as the shadow matches the tree's length), but it does not reflect the deep relativistic physics governing black hole horizons.
+\end{enumerate}
+
+\subsubsection{Reconciling Agreement and Distinction}
+
+This framework highlights the subtle interplay between dimensional consistency, geometric structure, and physical interpretation. The formal agreement between $\Lambda$ and $\tau$ at $x = 2r_g$ demonstrates that even elementary constructs can accidentally reproduce the correct order of magnitude for characteristic scales in black hole physics, provided that the underlying constants and dimensional analysis are respected. However, such agreement must not be conflated with physical equivalence; the relativistic timescale $\tau$ remains the authoritative measure for horizon-scale and strong-field phenomena, while $\Lambda$ functions as a pedagogical and heuristic reference point.
+
+In summary: $\Lambda$ is to $\tau$ what a map is to a territory. Both provide useful information, and they may even coincide numerically at certain points, but only the territory (relativistic physics) truly describes what is happening at the black hole horizon.
+
+
+
 
 \bibliographystyle{plain}
 \bibliography{references}
