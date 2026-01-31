@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1769617453.71638 "main.aux" "main.bbl" "main" 1769617456.36384 0
+["bibtex main"] 1769620681.23296 "main.aux" "main.bbl" "main" 1769620687.03734 0
   "./references.bib" 1769617421 832 2ed4811e59448de5e18512bddbdc141d ""
   "C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1769617455 5580 7767741c53741eb9123fbc90dadc0831 "pdflatex"
+  "main.aux" 1769620685 5582 d9f6f2acc5b769642cafd9980502db90 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1769617454.0806 "c:/Users/Vinayak/Documents/Projects/OTPOCMRRTBHL/main.tex" "main.pdf" "main" 1769617456.36456 0
+["pdflatex"] 1769620682.06198 "c:/Users/Vinayak/Documents/Projects/OTPOCMRRTBHL/main.tex" "main.pdf" "main" 1769620687.03895 0
   "C:/Users/Vinayak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1769500898 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Vinayak/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1767773695 13334454 4a22e5b0766a764b187961f098b4772c ""
   "C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -95,13 +95,13 @@
   "C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1736608268 48766 87a17a4ef312a39cd43896e34a679a56 ""
   "C:/Users/Vinayak/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/Vinayak/Documents/Projects/OTPOCMRRTBHL/main.tex" 1769617445 25831 8705fcaca99bc4e086ae705a14434897 ""
+  "c:/Users/Vinayak/Documents/Projects/OTPOCMRRTBHL/main.tex" 1769620673 25824 d42e3410bf2f5aa9c6144175b44e9249 ""
   "figures/mass_radius_diagram.png" 1768323290 232651 25752fcdc7922392c0835ecb6cffc26b ""
   "figures/photon_bh_trajectory.png" 1768405486 50791 244f4557c2988b09a92145b57b8df892 ""
-  "main.aux" 1769617455 5580 7767741c53741eb9123fbc90dadc0831 "pdflatex"
-  "main.bbl" 1769617453 496 e9235ee59c27fae2b1f4a8c408e2109b "bibtex main"
-  "main.out" 1769617455 5445 8dc7c914303b37aea6ffbe3bfd572af2 "pdflatex"
-  "main.tex" 1769617445 25831 8705fcaca99bc4e086ae705a14434897 ""
+  "main.aux" 1769620685 5582 d9f6f2acc5b769642cafd9980502db90 "pdflatex"
+  "main.bbl" 1769620681 496 e9235ee59c27fae2b1f4a8c408e2109b "bibtex main"
+  "main.out" 1769620685 5445 8dc7c914303b37aea6ffbe3bfd572af2 "pdflatex"
+  "main.tex" 1769620673 25824 d42e3410bf2f5aa9c6144175b44e9249 ""
   (generated)
   "main.aux"
   "main.log"
