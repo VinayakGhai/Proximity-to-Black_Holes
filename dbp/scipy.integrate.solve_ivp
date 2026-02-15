@@ -1,0 +1,28 @@
+import numpy as np
+
+g = 9.81
+m1, m2 = 1.0, 1.0
+l1, l2 = 2.0, 2.0
+
+def derivatives(t, y):
+    θ1, ω1, θ2, ω2 = y
+    Δ = θ1 - θ2
+
+    den1 = (m1 + m2)*l1 - m2*l1*np.cos(Δ)**2
+    den2 = (l2/l1)*den1
+
+    dω1 = (
+        m2*l1*ω1**2*np.sin(Δ)*np.cos(Δ)
+        + m2*g*np.sin(θ2)*np.cos(Δ)
+        + m2*l2*ω2**2*np.sin(Δ)
+        - (m1 + m2)*g*np.sin(θ1)
+    ) / den1
+
+    dω2 = (
+        -m2*l2*ω2**2*np.sin(Δ)*np.cos(Δ)
+        + (m1 + m2)*g*np.sin(θ1)*np.cos(Δ)
+        - (m1 + m2)*l1*ω1**2*np.sin(Δ)
+        - (m1 + m2)*g*np.sin(θ2)
+    ) / den2
+
+    return [ω1, dω1, ω2, dω2]
